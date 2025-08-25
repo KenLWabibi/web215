@@ -1,160 +1,129 @@
-
-/* =============================================
-	Author: ken Wabibi 
-	Date: 18Jan24
-   =============================================
-*/
-
+/* Html */
 html{
-    width: 90%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1250px;
     margin: 0 auto;
-}
-
+    background: linear-gradient(to right, #535378, #8888aa);
+} 
+/* Header */
 header {
+    padding: 10px 1px;
     text-align: center;
-    position: relative;
-    z-index: 1; /* Ensures header stays on top of the img */
-}
-
-/* Logo Image */
-header img {
-    position: absolute;
-    top: 25px;  /* Distance from the top */
-    left: -320px;  /* Move the image to the left outside of the max-width container */
-    width: 250px;  /* Adjust the logo size */
-    height: auto;
-    z-index: 2;  /* Ensure the image appears on top of other content */
-}
-
-figure img {
-    box-sizing: border-box;
-    width: 300px;             /* Example: set width to 300px */
-    height: auto;
-    display: block;        /* Makes the image a block element (removes extra space below the image) */
-    margin: 0 auto;
-    border: 2px solid #4C2719;
+    margin: 0;
+    width: 100%;
+    border: 5px dotted #20205D;
     border-radius: 10px;
-}
-
-figcaption {
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    box-sizing: border-box;
 }
 
 /* Body */
 body {
-    background-color: #A4AF69;
-    color: #4C2719;
+    background-color:#d1cedc; 
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
-    font-family: "Helvetica Neue", "Arial", "Montserrat", sans-serif;
+    border: 5px solid #20205D;
+    border-radius: 10px;
     font-size: 1.2em;
-    padding: 5px; /* Remove padding on body, it may conflict with other elements */
-    margin: 0; /* Remove default body margin */
+    padding: 10px; /* Remove padding on body, it may conflict with other elements */
+    margin: 10px; /* a tiny bit of top/bottom margin overall */
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensure body takes at least full height */
 }
 
-/* Navigation */
-nav {
-    padding: 5px;
+/* Headings */
+h1 {
+    padding: 0;
+    margin: 4px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2, h4 {
     text-align: center;
 }
 
+h3 {
+    text-align: center;
+    margin: 0px;
+}
+
+
+/* Main */
+main {
+    flex-grow: 1; /* Ensures main content takes available space */
+    padding: 35px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-bottom: 20px; /* Reduced padding to avoid pushing footer off screen */
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin: 5px;
+}
 nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px;
+    padding: 0;
     margin: 0;
     flex-wrap: wrap;
 }
-
 nav li {
     display: inline-block;
-    padding: 5px;
-    margin: 0 15px;
+    padding: 2px;
+    margin: 0 5px;
     font-size: 1em;
-}
-
-/* Blockquote */
-blockquote {
-    font-size: 1.5rem;
-    font-style: italic;
-    margin: 5px;
-    text-align: center;
-}
-
-/* Main content */
-main {
-    flex-grow: 1; /* Ensures main content takes available space */
-    padding: 35px;
-    padding-top: 5px;
-    padding-bottom: 20px; /* Reduced padding to avoid pushing footer off screen */
-    text-align: left;
-    margin: 0 auto;
-    border-radius: 1%;
-    border: 2px solid #EDE580;
-    margin-bottom: 20px;
-    margin-top: 10px;
 }
 
 /* Links */
 a {
-    color: #4C2719;
+	color: #000000;
     text-decoration: none;
     font-weight: bolder;
 }
-
 a:hover {
-    color: #F17105;
+	color: #8888aa;
 }
-
 p a:hover {
-    color:#F2E9E4;
+    color: #8888aa;
 }
-
-/* Headings */
-h1 {
-    text-align: center;
-    font-family: "Montserrat", "Arial", "Helvetica Neue", sans-serif;
-    color: #EDE580;
-    background-color: #4C2719;
-    border-radius: 10%;
-    width: 100%;
-    margin: 5px;
-    padding: 20px 0;
+main p a {
+    color: #20205D;
 }
-
-h2, h3, h4 {
-    font-family: "Montserrat", "Arial", "Helvetica Neue", sans-serif;
-    text-align: center;
+footer p a {
+    text-decoration-line: underline;
+    color: #20205D;
 }
 
 /* Footer */
 footer {
-    font-family: "Montserrat", "Arial", "Helvetica Neue", sans-serif;
-    padding: 1px;
+    padding: 10px 1px;
     text-align: center;
     margin: 0;
-    background-color: #4C2719;
-    color: #EDE580;
-    border-radius: 10%;
     width: 100%;
-    box-sizing: border-box
+    border: 5px dotted #20205D;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+footer a {
+	font-size: 1em;
+	text-align: center; 
+	margin: 0; 
+    padding: 0;
 }
 
-footer a {
-    font-size: 18px;
-    text-align: center;
-    color: #A4AF69;
-    margin: 0;
-    padding: 0;
-    font-weight: bolder;
+footer p {
+    margin: 4px 0;
 }
 
 /* Media Queries for Small Screens */
