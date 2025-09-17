@@ -127,7 +127,7 @@ a:hover {
 main p a {
     color: #20205D;
 }
-footer p {
+footer p a {
     text-decoration-line: underline;
     color: #20205D;
 }
