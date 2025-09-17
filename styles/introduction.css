@@ -77,8 +77,8 @@ blockquote {
 
 figure img {
     box-sizing: border-box;
-    width: 300px;             /* Example: set width to 300px */
-    height: auto;
+    max-width: 100%;   /* Makes it responsive */
+    height: auto;             
     display: block;        /* Makes the image a block element (removes extra space below the image) */
     margin: 0 auto;
     border: 2px solid #20205D;
