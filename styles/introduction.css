@@ -197,7 +197,7 @@ footer p {
     }
 
     header img {
-        width: 150px;  /* Smaller logo for very small screens */
+        width: 100%;  /* Smaller logo for very small screens */
     }
 
     nav li {
