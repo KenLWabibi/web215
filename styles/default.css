@@ -54,7 +54,9 @@ h3 {
 /* Main */
 main {
     flex-grow: 1; /* Ensures main content takes available space */
-    border: thin solid #ccc;
+    width: 90%;
+    max-width: 1000px;
+	border: thin solid #ccc;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     color: #fff;
