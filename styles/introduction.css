@@ -158,7 +158,7 @@ footer p {
         position: relative;
         left: 0;
         top: 10px;
-        width: 150px;  /* Smaller logo for smaller screens */
+        width: 90px;  /* Smaller logo for smaller screens */
     }
 
     /* Navigation for smaller screens */
