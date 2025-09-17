@@ -6,22 +6,23 @@ html{
     background: linear-gradient(to right, #535378, #8888aa);
 } 
 /* Header */
-header {
+header, footer {
     padding: 10px 1px;
     text-align: center;
     margin: 0;
     width: 100%;
-    border: 5px dotted #20205D;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
 /* Body */
 body {
-    background-color:#d1cedc; 
-    font-family: "Montserrat", sans-serif;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    border: 5px solid #20205D;
     border-radius: 10px;
     font-size: 1.2em;
     padding: 10px; /* Remove padding on body, it may conflict with other elements */
@@ -53,11 +54,14 @@ h3 {
 /* Main */
 main {
     flex-grow: 1; /* Ensures main content takes available space */
-    padding: 35px;
-    padding-top: 5px;
+    border: thin solid #ccc;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 5px 35px 20px 35px;
     box-sizing: border-box;
     border-radius: 10px;
-    padding-bottom: 20px; /* Reduced padding to avoid pushing footer off screen */
     text-align: left;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -87,15 +91,14 @@ nav li {
 
 /* Links */
 a {
-	color: #000000;
+	color: #20205D;
     text-decoration: none;
     font-weight: bolder;
 }
 a:hover {
-	color: #8888aa;
-}
-p a:hover {
-    color: #8888aa;
+	color: #ccc;
+    background-color: #20205D;
+    border-radius: 5px;
 }
 main p a {
     color: #20205D;
@@ -106,15 +109,6 @@ footer p a {
 }
 
 /* Footer */
-footer {
-    padding: 10px 1px;
-    text-align: center;
-    margin: 0;
-    width: 100%;
-    border: 5px dotted #20205D;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
 footer a {
 	font-size: 1em;
 	text-align: center; 
