@@ -2,11 +2,9 @@
 node_modules/
 .env
 dist/
-build/
 
 # React (Frontend in client/)
 client/node_modules/
-client/build/
 client/.env
 
 # Logs
