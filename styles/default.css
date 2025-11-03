@@ -104,6 +104,7 @@ nav li {
     display: none;
     position: absolute;
     background-color: #333;
+	border-radius: 1rem;
     min-width: 160px;
     top: 100%;
     left: 0;
