@@ -115,6 +115,7 @@ nav li {
     display: block;
     padding: 10px;
     color: white;
+	border-radius: 1rem;
     text-decoration: none;
 }
 
