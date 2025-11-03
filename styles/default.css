@@ -91,6 +91,41 @@ nav li {
     font-size: 1em;
 }
 
+/* Dropdown Styles */
+.dropdown {
+    position: relative; /* Make sure the dropdown menu positions correctly */
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* Links */
 a {
 	color: #20205D;
