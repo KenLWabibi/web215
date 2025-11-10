@@ -131,4 +131,22 @@ nav li {
     display: block;
 }
 
+/* Links */
+a {
+	color: #20205D;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
+	color: #ccc;
+    background-color: #20205D;
+    border-radius: 5px;
+}
+main p a {
+    color: #20205D;
+}
+footer p a {
+    text-decoration-line: underline;
+    color: #20205D;
+}
 
