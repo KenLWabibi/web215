@@ -165,12 +165,12 @@ footer {
 
 footer p {
     margin: 8px 0;
-    font-size: 2em; /* matches body text size */
+    font-size: 2rem; /* matches body text size */
     color: #fff;
 }
 
 footer a {
-    font-size: 2em;
+    font-size: 2rem;
     color: #20205D;
     text-decoration: underline;
 }
