@@ -166,3 +166,79 @@ footer p {
     margin: 8px 0;
 	font-size: 1em;
 }
+
+* Media Queries for Small Screens */
+@media screen and (max-width: 768px) {
+    /* Adjust the main width and margins */
+    html {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Adjust logo size and position for small screens */
+    header img {
+        position: relative;
+        left: 0;
+        top: 10px;
+        width: 150px;  /* Smaller logo for smaller screens */
+    }
+
+    /* Navigation for smaller screens */
+    nav ul {
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        margin: 5px 0;  /* Reduce margin between navigation items */
+        padding: 5px;
+    }
+
+    /* Main content padding adjustment */
+    main {
+        padding: 20px;
+    }
+
+    /* Blockquote font size adjustment */
+    blockquote {
+        font-size: 1.2rem;
+    }
+
+    /* Footer font size adjustment */
+    footer a {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    /* Further adjustments for very small screens (phones) */
+    body {
+        font-size: 1em;
+    }
+
+    header img {
+        width: 150px;  /* Smaller logo for very small screens */
+    }
+
+    nav li {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    blockquote {
+        font-size: 1.1rem;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+}
+
+
+
