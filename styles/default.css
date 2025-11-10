@@ -231,6 +231,7 @@ footer p {
     margin: 0;
     flex-wrap: wrap;
     gap: 0rem;
+	font-size: .5em;	
 }
 
     nav li {
