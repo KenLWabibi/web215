@@ -222,18 +222,6 @@ footer p {
         width: 150px;  /* Smaller logo for very small screens */
     }
 
-	nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
-    gap: 0rem;
-	font-size: .8em;	
-}
-
     nav li {
         margin: 5px;
         padding: 5px;
@@ -251,6 +239,3 @@ footer p {
         font-size: 14px;
     }
 }
-
-
-
