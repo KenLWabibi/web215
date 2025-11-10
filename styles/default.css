@@ -87,6 +87,10 @@ nav ul {
     gap: 2rem;
 }
 
+footer nav ul {
+	gap: 1rem;
+}
+
 nav li {
     display: inline-block;
     padding: 2px;
