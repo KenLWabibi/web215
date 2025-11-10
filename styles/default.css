@@ -5,4 +5,12 @@ html{
     margin: 0 auto;
     background: linear-gradient(to right, #535378, #8888aa);
 } 
-
+/* Header */
+header, footer {
+    padding: 10px 1px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
