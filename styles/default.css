@@ -1,2 +1,8 @@
-
+/* Html */
+html{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #535378, #8888aa);
+} 
 
