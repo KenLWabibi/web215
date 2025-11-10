@@ -5,6 +5,7 @@ html{
     margin: 0 auto;
     background: linear-gradient(to right, #535378, #8888aa);
 } 
+
 /* Header */
 header, footer {
     padding: 10px 1px;
@@ -17,8 +18,8 @@ header, footer {
 
 /* Body */
 body {
+    
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
     color: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
     font-family: 'Poppins', sans-serif;
@@ -50,7 +51,6 @@ h3 {
     margin: 0px;
 }
 
-
 /* Main */
 main {
     flex-grow: 1; /* Ensures main content takes available space */
@@ -75,6 +75,7 @@ nav {
     text-align: center;
     margin: 5px;
 }
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -83,7 +84,13 @@ nav ul {
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
+    gap: 4rem;
 }
+
+footer nav ul {
+	gap: 1.2rem;
+}
+
 nav li {
     display: inline-block;
     padding: 2px;
@@ -128,12 +135,11 @@ nav li {
     display: block;
 }
 
-
 /* Links */
 a {
 	color: #20205D;
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: 600;
 }
 a:hover {
 	color: #ccc;
@@ -157,79 +163,6 @@ footer a {
 }
 
 footer p {
-    margin: 4px 0;
-    font-size: 0.625em;
-}
-
-/* Media Queries for Small Screens */
-@media screen and (max-width: 768px) {
-    /* Adjust the main width and margins */
-    html {
-        width: 100%;
-        margin: 0;
-    }
-
-    /* Adjust logo size and position for small screens */
-    header img {
-        position: relative;
-        left: 0;
-        top: 10px;
-        width: 150px;  /* Smaller logo for smaller screens */
-    }
-
-    /* Navigation for smaller screens */
-    nav ul {
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-    }
-
-    nav li {
-        margin: 5px 0;  /* Reduce margin between navigation items */
-        padding: 5px;
-    }
-
-    /* Main content padding adjustment */
-    main {
-        padding: 20px;
-    }
-
-    /* Blockquote font size adjustment */
-    blockquote {
-        font-size: 1.2rem;
-    }
-
-    /* Footer font size adjustment */
-    footer a {
-        font-size: 16px;
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-    /* Further adjustments for very small screens (phones) */
-    body {
-        font-size: 1em;
-    }
-
-    header img {
-        width: 150px;  /* Smaller logo for very small screens */
-    }
-
-    nav li {
-        margin: 5px;
-        padding: 5px;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    blockquote {
-        font-size: 1.1rem;
-    }
-
-    footer a {
-        font-size: 14px;
-    }
+    margin: 8px 0;
+	font-size: 1em;
 }
