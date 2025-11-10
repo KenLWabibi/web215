@@ -76,7 +76,7 @@ nav {
     margin: 5px;
 }
 
-nav ul footer {
+nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
