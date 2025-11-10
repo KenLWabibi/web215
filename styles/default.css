@@ -139,7 +139,7 @@ nav li {
 a {
 	color: #20205D;
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: 600;
 }
 a:hover {
 	color: #ccc;
