@@ -151,6 +151,11 @@ footer p a {
 }
 
 /* Footer */
+
+.footer__nav {
+	gap: 2rem;	
+}
+
 footer a {
 	font-size: 1em;
 	text-align: center; 
