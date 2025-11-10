@@ -14,3 +14,20 @@ header, footer {
     border-radius: 10px;
     box-sizing: border-box;
 }
+/* Body */
+body {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 10px; /* Remove padding on body, it may conflict with other elements */
+    margin: 10px; /* a tiny bit of top/bottom margin overall */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least full height */
+}
+
