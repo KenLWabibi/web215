@@ -167,7 +167,7 @@ footer p {
 	font-size: 1em;
 }
 
-* Media Queries for Small Screens */
+/* Media Queries for Small Screens */
 @media screen and (max-width: 768px) {
     /* Adjust the main width and margins */
     html {
