@@ -152,8 +152,13 @@ footer p a {
 
 /* Footer */
 footer a {
-	font-size: 1.2em;
+	font-size: 1em;
 	text-align: center; 
 	margin: 0; 
     padding: 0;
+}
+
+footer p {
+    margin: 4px 0;
+	font-size: 1em;
 }
