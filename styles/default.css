@@ -5,6 +5,7 @@ html{
     margin: 0 auto;
     background: linear-gradient(to right, #535378, #8888aa);
 } 
+
 /* Header */
 header, footer {
     padding: 10px 1px;
@@ -14,6 +15,7 @@ header, footer {
     border-radius: 10px;
     box-sizing: border-box;
 }
+
 /* Body */
 body {
     
@@ -31,5 +33,22 @@ body {
     min-height: 100vh; /* Ensure body takes at least full height */
 }
 
+/* Headings */
+h1 {
+    padding: 0;
+    margin: 4px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin: 0px;
+}
 
 
