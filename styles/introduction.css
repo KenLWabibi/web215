@@ -1,0 +1,267 @@
+/* Html */
+html{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #535378, #8888aa);
+} 
+
+/* Header */
+header, footer {
+    padding: 10px 1px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 10px; /* Remove padding on body, it may conflict with other elements */
+    margin: 10px; /* a tiny bit of top/bottom margin overall */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least full height */
+}
+
+/* Headings */
+h1 {
+    padding: 0;
+    margin: 4px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 0; 
+}
+
+/* Main */
+main {
+    flex-grow: 1; /* Ensures main content takes available space */
+    width: 90%;
+    max-width: 1000px;
+    border: thin solid #ccc;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 5px 35px 20px 35px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+blockquote {
+    text-align: center;
+}
+
+strong{
+  	font-weight: bold;
+}
+
+figure img {
+    box-sizing: border-box;
+    max-width: 100%;   /* Makes it responsive */
+    height: auto;             
+    display: block;        /* Makes the image a block element (removes extra space below the image) */
+	margin-top: 0;
+    margin: 0 auto;
+    border: 2px solid #20205D;
+    border-radius: 10px;
+}
+
+figcaption {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+footer nav ul {
+	gap: 1.2rem;
+}
+
+nav li {
+    display: inline-block;
+    padding: 2px;
+    margin: 0 5px;
+    font-size: 1em;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative; /* Make sure the dropdown menu positions correctly */
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+	border-radius: 1rem;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+	border-radius: 1rem;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Links */
+a {
+	color: #20205D;
+    text-decoration: none;
+    font-weight: 600;
+}
+a:hover {
+	color: #ccc;
+    background-color: #20205D;
+    border-radius: 5px;
+}
+main p a {
+    color: #20205D;
+}
+footer p a {
+    text-decoration-line: underline;
+    color: #20205D;
+}
+
+/* Footer */
+footer a {
+	font-size: 1em;
+	text-align: center; 
+	margin: 0; 
+    padding: 0;
+}
+
+footer p {
+    margin: 8px 0;
+	font-size: 1em;
+}
+
+/* Media Queries for Small Screens */
+@media screen and (max-width: 768px) {
+    /* Adjust the main width and margins */
+    html {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Adjust logo size and position for small screens */
+    header img {
+        position: relative;
+        left: 0;
+        top: 10px;
+        width: 90px;  /* Smaller logo for smaller screens */
+    }
+
+    /* Navigation for smaller screens */
+    nav ul {
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        margin: 5px 0;  /* Reduce margin between navigation items */
+        padding: 5px;
+    }
+
+    /* Main content padding adjustment */
+    main {
+        padding: 20px;
+    }
+
+    /* Blockquote font size adjustment */
+    blockquote {
+        font-size: 1.2rem;
+    }
+
+    /* Footer font size adjustment */
+    footer a {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    /* Further adjustments for very small screens (phones) */
+    body {
+        font-size: 1em;
+    }
+
+    header img {
+        width: 100%;  /* Smaller logo for very small screens */
+    }
+
+    nav li {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    blockquote {
+        font-size: 1.1rem;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+}
