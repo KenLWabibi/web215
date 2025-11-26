@@ -1,5 +1,11 @@
+# Node modules
 node_modules/
 client/node_modules/
 server/node_modules/
+
+# OS files
 .DS_Store
-*/.env
+
+# Environment files
+.env
+*.env
