@@ -108,12 +108,13 @@ body {
   .hint-box {
     margin-top: 2rem;
     color: whitesmoke;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255,255,255,0.4);
   }
 
-  .hint-box p {
-    color: whitesmoke;
-}
+  .hint-box p,
+  .hint-box strong {
+      color: whitesmoke;
+  }
   
 
 
