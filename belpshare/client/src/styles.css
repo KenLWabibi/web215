@@ -108,8 +108,7 @@ body {
   .hint-box {
     margin-top: 2rem;
     color: #0056b3;
-    background-color: whitesmoke;
-    border-radius: 5px;
+    border: 1px solid #ccc;
   }
   
 
