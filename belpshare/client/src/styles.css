@@ -110,6 +110,10 @@ body {
     color: whitesmoke;
     border: 1px solid #ccc;
   }
+
+  .hint-box p {
+    color: whitesmoke;
+}
   
 
 
