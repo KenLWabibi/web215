@@ -1,3 +1,5 @@
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react";
 import Book from "./Book";
 
@@ -74,6 +76,8 @@ export default function App() {
       });
       const newBook = await res.json();
       setBooks([...books, newBook]);
+
+      toast.success("Book added!");
       setContent("");
       setAuthor("");
       setCategory("");
@@ -108,7 +112,7 @@ export default function App() {
             </div>
             {loginError && <p style={{ color: "red" }}>{loginError}</p>}
           </form>
-          <h2 className="slogan">YOUR cozy corner on the internet for motivation, inspiration, and personal growth.</h2>
+          <h2 className="slogan">Your cozy corner on the internet for motivation, inspiration, and personal growth.</h2>
           <div className="hint-box">
             <p><strong>Hint Credentials:</strong></p>
             <p>Username: web215user</p>
@@ -122,6 +126,7 @@ export default function App() {
   
   return (
     <main className="container">
+      <ToastContainer position="top-center" autoClose={2000} />
       <div className="header">
         <h1 className="title">Belpshare</h1>
         <button onClick={handleLogout} style={{ marginBottom: "1rem" }}>

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
+
 
 export default function Book({ book, setBooks }) {
   const [isEditing, setIsEditing] = useState(false);
@@ -18,6 +20,7 @@ export default function Book({ book, setBooks }) {
       setBooks(current =>
         current.map(b => b._id === bookId ? { ...b, status: !b.status } : b)
       );
+      toast.info("Bestseller status updated!")
     }
   };
 
@@ -27,7 +30,18 @@ export default function Book({ book, setBooks }) {
     const json = await res.json();
     if (json.acknowledged) {
       setBooks(current => current.filter(b => b._id !== bookId));
+      toast.error("Book deleted!");
     }
+  };
+
+  // Confirm delete before actually deleting
+  const confirmDelete = async () => {
+    const confirmed = window.confirm(
+      "Are you sure you want to delete this book?"
+    );
+    if (!confirmed) return; // User clicked Cancel
+
+    await deleteBook(book._id);
   };
 
   // Save edits for book title, author, and category
@@ -45,6 +59,7 @@ export default function Book({ book, setBooks }) {
         )
       );
       setIsEditing(false);
+      toast.success("Book updated!");
     }
   };
 
@@ -104,7 +119,7 @@ export default function Book({ book, setBooks }) {
         )}
 
         <button className="book__delete" 
-        onClick={() => deleteBook(book._id)}>Delete</button>
+        onClick={confirmDelete}>Delete</button>
       </div>
     </div>
   );

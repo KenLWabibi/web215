@@ -107,7 +107,13 @@ body {
 
   .hint-box {
     margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;   /* centers the box */
     color: #007bff;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 1px solid #007bff;
+    width: 12rem;
   }
 
 .container {
