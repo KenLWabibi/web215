@@ -292,6 +292,11 @@ form button {
         width: 95%;
     }
 
+    .radio-options label {
+        gap: 1 rem;  /* space between radio and text */
+        margin-right: 0.4rem;
+    }
+
     .mutations {
         flex-direction: column;
         gap: 8px;

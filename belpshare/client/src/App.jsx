@@ -9,13 +9,13 @@ export default function App() {
   const [author, setAuthor] = useState("");
   const [category, setCategory] = useState("");
 
-  
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [loginError, setLoginError] = useState("");
 
-  
+
   useEffect(() => {
     async function checkAuth() {
       const res = await fetch("/check-auth", { credentials: "include" });
@@ -25,7 +25,7 @@ export default function App() {
     checkAuth();
   }, []);
 
-  
+
   useEffect(() => {
     if (!isLoggedIn) return;
     async function getBooks() {
@@ -38,7 +38,7 @@ export default function App() {
     getBooks();
   }, [isLoggedIn]);
 
-  
+
   const handleLogin = async (e) => {
     e.preventDefault();
     const res = await fetch("/login", {
@@ -56,7 +56,7 @@ export default function App() {
     }
   };
 
-  
+
   const handleLogout = async () => {
     await fetch("/logout", { method: "POST", credentials: "include" });
     setIsLoggedIn(false);
@@ -64,7 +64,7 @@ export default function App() {
     setPassword("");
   };
 
-  
+
   const addNewBook = async (e) => {
     e.preventDefault();
     if (content.length > 3 && author.length > 1 && category) {
@@ -84,7 +84,7 @@ export default function App() {
     }
   };
 
-  
+
   if (!isLoggedIn) {
     return (
       <main className="login-container">
@@ -123,7 +123,7 @@ export default function App() {
     );
   }
 
-  
+
   return (
     <main className="container">
       <ToastContainer position="top-center" autoClose={2000} />
@@ -155,39 +155,40 @@ export default function App() {
 
         <div className="radio-container">
           <span className="radio-label">Category:</span>
+          <div className="radio-options">
+            <label>
+              <input
+                type="radio"
+                name="category"
+                value="Inspirational"
+                checked={category === "Inspirational"}
+                onChange={(e) => setCategory(e.target.value)}
+              />
+              Inspirational
+            </label>
 
-          <label>
-            <input
-              type="radio"
-              name="category"
-              value="Inspirational"
-              checked={category === "Inspirational"}
-              onChange={(e) => setCategory(e.target.value)}
-            />
-            Inspirational
-          </label>
+            <label>
+              <input
+                type="radio"
+                name="category"
+                value="Motivational"
+                checked={category === "Motivational"}
+                onChange={(e) => setCategory(e.target.value)}
+              />
+              Motivational
+            </label>
 
-          <label>
-            <input
-              type="radio"
-              name="category"
-              value="Motivational"
-              checked={category === "Motivational"}
-              onChange={(e) => setCategory(e.target.value)}
-            />
-            Motivational
-          </label>
-
-          <label>
-            <input
-              type="radio"
-              name="category"
-              value="Personal Growth"
-              checked={category === "Personal Growth"}
-              onChange={(e) => setCategory(e.target.value)}
-            />
-            Personal Growth
-          </label>
+            <label>
+              <input
+                type="radio"
+                name="category"
+                value="Personal Growth"
+                checked={category === "Personal Growth"}
+                onChange={(e) => setCategory(e.target.value)}
+              />
+              Personal Growth
+            </label>
+          </div>
         </div>
         <div className="form__button-container">
           <button type="submit">Add Book</button>
