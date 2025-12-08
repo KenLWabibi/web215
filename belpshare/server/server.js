@@ -43,14 +43,14 @@ app.post("/logout", (req, res) => {
   res.json({ success: true });
 });
 
+const router = require("./routes");
+app.use("/api", router);
+
 app.use(express.static(path.join(__dirname, "../client/build")));
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 })
 
-
-const router = require("./routes");
-app.use("/api", router);
 
 const port = process.env.PORT || 1000;
 
