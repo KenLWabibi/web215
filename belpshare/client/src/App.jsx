@@ -112,7 +112,7 @@ export default function App() {
             </div>
             {loginError && <p style={{ color: "red" }}>{loginError}</p>}
           </form>
-          <h2 className="slogan">Your cozy corner on the internet for motivation, inspiration, and personal growth.</h2>
+          <h2 className="slogan">Your cozy corner on the internet for motivational, inspirational, and personal growth books. Come Share, Read, and Grow.</h2>
           <div className="hint-box">
             <p><strong>Hint Credentials:</strong></p>
             <p>Username: web215user</p>
